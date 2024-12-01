@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const LeaFormFeld = ({ label, value, onChange }) => (
     <div style={{ marginBottom: '10px' }}>
