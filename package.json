@@ -1,44 +1,20 @@
 {
-  "name": "@leaali/lea-form-feld",
+  "name": "lea-form-feld",
   "version": "1.0.0",
   "description": "Eine React-Komponente für Formulare",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c",
-    "clean": "rimraf src/$1/build",
-    "version-and-publish": "npm run clean --module=$npm_config_module && npm run build --module=$npm_config_module && cd src/$npm_config_module && npm version --no-git-tag-version $npm_config_version && npm publish --registry=https://npm.pkg.github.com/ && git add . && git commit -m \"$npm_config_module - $(npm version --no-git-tag-version $npm_config_version)\" && git push"
-  },
-  "keywords": [
-    "react",
-    "form",
-    "component"
-  ],
-  "author": "Lea",
-  "license": "ISC",
-  "peerDependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "build": "babel src --out-dir dist"
   },
   "devDependencies": {
     "@babel/cli": "^7.25.9",
     "@babel/core": "^7.26.0",
     "@babel/preset-env": "^7.26.0",
-    "@babel/preset-react": "^7.25.9",
-    "@rollup/plugin-babel": "^6.0.4",
-    "@rollup/plugin-commonjs": "^28.0.1",
-    "@rollup/plugin-json": "^6.1.0",
-    "@rollup/plugin-node-resolve": "^15.3.0",
-    "@rollup/plugin-url": "^8.0.2",
-    "babel-loader": "^9.2.1",
-    "rimraf": "^6.0.1",
-    "rollup": "^2.79.2",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-postcss": "^4.0.2",
-    "rollup-plugin-terser": "^7.0.2"
+    "@babel/preset-react": "^7.25.9"
   },
-  "dependencies": {
-    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.18.6",
-    "yarn": "^1.22.22"
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }

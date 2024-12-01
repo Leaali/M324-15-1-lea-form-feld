@@ -1,0 +1,9 @@
+# Ignoriere Node-Module und Build-Ordner
+node_modules/
+dist/
+
+# Ignoriere die Quellen, die nicht veröffentlicht werden sollen
+src/
+
+# Ignoriere Konfigurationsdateien, die nicht relevant sind
+*.log
