@@ -1,6 +1,6 @@
 {
   "name": "lea-form-feld",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Eine React-Komponente für Formulare",
   "main": "dist/index.js",
   "scripts": {
