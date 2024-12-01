@@ -1,1 +1,3 @@
-export { default as LeaFormFeld } from "./LeaFormFeld/LeaFormFeld";
+import LeaFormFeld from "./LeaFormFeld/LeaFormFeld";
+
+export { LeaFormFeld };
